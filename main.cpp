@@ -9,7 +9,7 @@ void findMissing(int* arr, int n, int low, int high) {
     for (int i=0; i<n; i++) {
         values.insert(arr[i]);
     }
-    for (int i=low; i<high; i++) {
+    for (int i=low; i<=high; i++) {
         if (values.find(i) == values.end()) {
             cout << i << " ";
         }
